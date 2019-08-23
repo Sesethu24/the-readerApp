@@ -1,0 +1,113 @@
+.heading{
+    justify-content: center;
+    display: flex;
+}
+h2{
+    font-size: 50px;
+}
+h1{
+    text-align: center;
+    font-size: 50px;
+    color: blue;
+    font-style: italic;
+}
+.selectBook{
+   padding: 2em;
+   margin-left: 50px;
+}
+body{
+   background-color: greenyellow;
+}
+.quizButton{
+    
+    font-size: 20px;
+    width: 60px;
+    margin: 50px;
+    justify-content: right;
+    display: flex;
+    align-content: center;
+ 
+}
+
+.button{
+    font-size: 20px;
+    width: 60px;
+    border: 5px solid black;
+    margin: 50px;
+    background-color: pink;
+}
+.container{
+    background-color: yellow
+}
+.description{
+    background-color: pink;
+}
+.abc{
+    border-radius: 60%;
+    width: 180px;
+    height: 180px;
+    
+}
+.lion{
+    border-radius: 60%;
+    width: 200px;
+    height: 180px;
+    padding-top: 40px; 
+    
+}
+.parents{
+    border-radius: 60%;
+    
+}
+.textBox{
+    font-family: Arial, Helvetica, sans-serif;
+    color: purple;
+    font-style: italic;
+}
+
+    table, th, td {
+        border: 3px solid black;
+        border-spacing: 5px;
+        margin-bottom: 20px;
+        border-collapse: collapse;
+        }
+      
+      th, td {
+        padding: 15px;
+      }
+      table {
+        border-spacing: 5px;
+        
+      }
+    .background{
+        
+        background-color: aquamarine;
+    }
+      
+    .logout{
+    font-size: 20px;
+    width: 60px;
+    border: 5px solid black;
+    
+    margin: 50px;
+    background-color: pink;
+        
+     }
+   .imageBackground {
+    background-color: pink;
+
+}
+.submit{
+    font-size: 20px;
+    width: 60px;
+    border: 5px solid black;
+    
+    margin: 50px;
+    background-color: pink;
+}
+
+@media only screen and (max-width: 1010px) {
+    body {
+      background-color: lightblue;
+    }
+  }

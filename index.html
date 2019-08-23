@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="the-reader.css">
+    <title>Document</title>
+
+    <script type="text/x-template" class="userTemplate">
+        {{#each myBooks}}
+    <li class="theList">
+      {{this}}</li>
+    {{/each}}
+    </script>
+</head>
+
+<body>
+    <div class="row">
+        <div class="heading">
+            <h2>Choose a book!<img src="smiley.jpeg" alt="Smiley face" align="middle"></h2>
+        </div>
+    </div>
+
+    <div class="row">
+        <input type="radio" name="language" class="radioBtn" value="isiXhosa"> isiXhosa
+        <input type="radio" name="language" class="radioBtn" value="English"> English
+        <input type="radio" name="language" class="radioBtn" value="Afrikaans"> Afrikaans
+
+
+    </div>
+    <div class=mySubmit>
+        <input type="submit" class="submitBtn" value="Submit">
+    </div>
+
+    <div class="displayArea">
+            
+    </div>
+    
+                             
+
+    <br>
+    <br>
+    <div class="quizButton">
+        <a href="the-quiz.html">
+            Quiz
+        </a>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="the-reader.js"></script>
+    <script src="the-reader-dom.js"></script>
+    <script src="the-reader-test.js"></script>
+ 
+
+</body>
+
+</html>
