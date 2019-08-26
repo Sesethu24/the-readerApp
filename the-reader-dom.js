@@ -2,7 +2,12 @@ var radioBtnElem = document.querySelector(".radioBtn");
 var submitBtnElem = document.querySelector(".submitBtn");
 var displayAreaElem = document.querySelector(".displayArea");
 
+var template1 = document.querySelector(".bookTemplate").innerHTML;
 
+
+var bookTemplate = Handlebars.compile(template1);
+
+var bookDataElem = document.querySelector(".bookTitles");
 
 var instance = TheReader();
 
@@ -28,9 +33,13 @@ function theSelectedLanguge(){
         var type = radioBtnChecked.value;
         var display = instance.getBooks(type);
         displayAreaElem.innerHTML = display;
-        //displayAreaElem.innerHTML = display({ myTemp: books });
-    }
-
+     }
+    
+    var bookData = bookTemplate({ mybooks: instance.getBooks(radioBtnChecked.value)});
+    
+    console.log(bookData);
+    
+    bookDataElem.innerHTML = bookData;
 }
 
 submitBtnElem.addEventListener('click', theSelectedLanguge)
